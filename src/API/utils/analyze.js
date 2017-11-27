@@ -1,8 +1,13 @@
 import stringSimilarity from "string-similarity";
 
+// trying to modify the following variables can be dangerous
+const IGNORED_WORDS = "(?!the|and|com)";
+const MINIMUM_WORD_LENGTH = '3';
+//
+
 function getWords(issues){
     let string = ""
-    let regex = /\b([A-Za-z']+){3}\b/g;
+    let regex = new RegExp(`${IGNORED_WORDS}\\b([A-Za-z']+){${MINIMUM_WORD_LENGTH}}\\b`, 'g');
     for(let issue of issues){
         string += issue.title + " " + issue.body + " ";
     }
