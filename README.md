@@ -12,4 +12,4 @@ npm run init
 ```
 Ou apenas entre no site: [Issues Analyst](https://jvitoroc.github.io/issues-analyst2/)
 ## Tutorial
-Abra a aplicação e pesquise um repositório e clique nele, logo em seguida é mostrado dados relacionados a *issues* daquele repositório.
+Abra a aplicação, pesquise um repositório e clique nele. Logo em seguida é mostrado dados relacionados as *issues* daquele repositório.
