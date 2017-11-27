@@ -8,12 +8,11 @@ npm run start
 ```
 ou
 ```
-npm install
 npm run init
 ```
 ou
 ```
-Abrir /dist/index.html
+Entre no site: [Issues Analyst](https://jvitoroc.github.io/issues-analyst2/)
 ```
 ## Tutorial
 Abra a aplicação e pesquise um repositório e clique nele, logo em seguida é mostrado dados relacionados a *issues* daquele repositório.
