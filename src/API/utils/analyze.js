@@ -37,7 +37,7 @@ function getOccurrences(words){
     return dict;
 }
 
-function rankWordOccurrences(dict){
+function rankWordOccurrences(dict){ // Algorithm optimization needed
     let rank = [];
     for(let i = 0; i < 10;i++){
         let word = Object.keys(dict).reduce(function(a, b){ return dict[a] > dict[b] ? a : b });
