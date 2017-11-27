@@ -1,0 +1,45 @@
+.main .repository-list{
+    list-style-type: none;
+    padding: 40px 0;
+}
+
+.main .message-wrap{
+    margin-top: 100px;
+}
+
+.main .message-wrap h3{
+    text-align: center;
+}
+
+.main .repository-list > .repository{
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+}
+
+.main .repository-list > .repository .avatar > img{
+    max-width: 80px;
+    min-width: 60px;
+}
+
+.main .repository-list > .repository .desc{
+    word-break: break-all;
+}
+
+@media screen and (max-width: 575px){
+    .main .repository-list > .repository .avatar > img{
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .main .repository-list > .repository .desc{
+        text-align: center;
+    }
+
+    .main .repository-list > .repository .desc .title{
+        font-size: 1.5em;
+    }
+}

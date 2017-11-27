@@ -1,0 +1,18 @@
+.analyzed-data{
+    margin-top: 40px;
+}
+
+.most-used-words .word-list{
+    list-style-type: decimal;
+}
+
+.most-used-words .word{
+    font-size: 1.5em;
+}
+
+.analyze-column-inner{
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
