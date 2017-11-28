@@ -18,7 +18,10 @@ View.propTypes = {
         PropTypes.bool
     ]),
     pullIssues: PropTypes.func,
-    data: PropTypes.array
+    repos: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.bool
+    ])
 };
 
 export default View;

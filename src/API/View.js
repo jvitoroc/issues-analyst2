@@ -8,8 +8,6 @@ import Message from "../Message";
 
 function View({pullRepos, pullIssues, loading, repos, analysis, mounted, error}){
     let render = ()=>{
-        if(mounted)
-            return <Message value={"Pick a repository!"} />
         if(repos){
             return <RepositoriesContainer
                     pullIssues={pullIssues}
@@ -21,6 +19,8 @@ function View({pullRepos, pullIssues, loading, repos, analysis, mounted, error})
                     error={error}
                     analysis={analysis} />
         }
+        if(mounted)
+            return <Message value={"Pick a repository!"} />
     };
 
     return (
@@ -47,7 +47,10 @@ View.propTypes = {
         PropTypes.string,
         PropTypes.bool
     ]),
-    repos: PropTypes.array,
+    repos: PropTypes.oneOfType([
+        PropTypes.array,
+        PropTypes.bool
+    ]),
     pullData: PropTypes.func
 }
 

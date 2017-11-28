@@ -8,7 +8,8 @@ import PropTypes from "prop-types";
 const ERROR_MESSAGES = {
     'R404': 'No repositories found!',
     'I404': 'No issues found!',
-    '0': 'A connection error occurred'
+    '0': 'A connection error occurred',
+    'R400': 'This is not a valid repository name'
 }
 
 class RepositorySearch extends React.Component{
@@ -21,6 +22,10 @@ class RepositorySearch extends React.Component{
 
     async pullRepos(query){
         try{
+            if(query.length === 0 || query === '' || query === null){
+                throw new Error('R400');
+            }
+
             this.setState({loading: true, error: false, mounted: false, analysis: null});
             let repos = await getRepos(query, this.props.maxReposLength);
             if(repos.length === 0)
