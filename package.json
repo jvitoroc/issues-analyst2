@@ -23,7 +23,7 @@
     "deploy": "gh-pages -d build",
     "jest": "jest",
     "start": "react-scripts start",
-    "init": "npm install -g http-server opener && npm install -D concurrently && npm run open",
+    "init": "npm install -g http-server opener & npm install -D concurrently webpack && npm run wp && npm run open",
     "open": "concurrently \"http-server ./dist -a localhost -p 1234\" \"opener http://localhost:1234/\"",
     "wp": "webpack --config webpack.config.js",
     "build": "react-scripts build",
