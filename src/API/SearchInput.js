@@ -28,7 +28,7 @@ class SearchInput extends React.Component{
                 <div className="container">
                     <div className="form-row">
                         <div className="col-8 col-sm-10">
-                            <input onChange={this.handleChange} className="form-control" type="text" name="query"/>
+                            <input onChange={this.handleChange} className="form-control" type="text" name="query" placeholder="Repository name"/>
                         </div>
                         <div className="col-4 col-sm-2">
                             <input type="submit" value="Search" className="btn btn-primary form-control"/>
